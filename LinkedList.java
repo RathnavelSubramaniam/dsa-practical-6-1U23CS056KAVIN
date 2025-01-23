@@ -66,20 +66,20 @@ public static void main(String[] args) {
             }
            }
     }
-public void insertBegin(int data) 
+public void insertBegin(int data1) 
     {  
 
-        Node newNode = new Node(data);
+        Node newNode = new Node(data1);
 
         if (head == null) {
             head = newNode;
             tail = newNode;
         } else {
-            tail.next = newNode;
-            tail = newNode;
-        }
+            newNode.next = head;
+            head = newNode;
+        
     System.out.println("Elements Inserted");
-         
+        }    
     } 
 public void displayList() {
         Node current = head;
