@@ -66,10 +66,10 @@ public static void main(String[] args) {
             }
            }
     }
-public void insertBegin(int data1) 
+public void insertBegin(int data) 
     {  
 
-        Node newNode = new Node(data1);
+        Node newNode = new Node(data);
 
         if (head == null) {
             head = newNode;
